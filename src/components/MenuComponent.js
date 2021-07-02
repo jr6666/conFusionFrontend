@@ -22,7 +22,7 @@ function RenderDish({dish}){
         <div key={dish.id} className="col-12 col-md-5 mt-5">
             <Link to={`/menu/${dish.id}`}>
                 <Card>
-                    <CardImg width="100%" src={baseUrl+dish.image} alt={dish.name}/>
+                    <CardImg width="100%" src={dish.image} alt={dish.name}/>
                     <CardImgOverlay>
                         <CardTitle>{dish.name}</CardTitle>
                     </CardImgOverlay>
